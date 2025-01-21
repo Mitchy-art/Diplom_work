@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe791;
+    margin-left: 20px;
+    padding: 10;
+    font-size:18px;
+}
+
+img{width: 650px;
+    height: auto;
+    text-align: center;
+    }
+
+h1{color: #b36b00;}
+h2{color: #c97900;}
+h3{color: #c97900;}
+
+a{
+    color: #c97900;
+    padding: 50px;
+    font-size: 30px;
+    gap: 40px
+}
+
+li{color: #b56d00;}
+
+button{
+    color: #c97900;
+    background: #ff9f0f;
+    font-size: 25px;
+    bound: #b36b00;
+}
+
+p{font-size: 25px}
+
+h5{
+    color: #c97900;
+    margin: 0px;
+
+}

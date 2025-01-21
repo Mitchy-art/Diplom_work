@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Приют{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css_pack/styles.css' %}"/>
+</head>
+<body>
+<!--    <header>-->
+<!--        {% block pagename %}-->
+<!--            <h1>Главная страница</h1>-->
+<!--        {% endblock %}-->
+<!--    </header>-->
+    <menu>
+        {% block menu %}
+            <a href="http://127.0.0.1:8000/main_page/">Главная страница</a>
+            <a href="http://127.0.0.1:8000/main_page/shop_page/">Хвостики</a>
+            <a href="http://127.0.0.1:8000/main_page/cart_page/">Заявки</a>
+            <a href="http://127.0.0.1:8000/main_page/registration/">Регистрация</a>
+            <a href="http://127.0.0.1:8000/main_page/enter/">Войти</a>
+        {% endblock %}
+    </menu>
+    <slash>
+        {% block slash %}
+        <h5>____________________________________________________________________________________________________________________________________________________________________________________</h5>
+        {% endblock %}
+    </slash>
+    <main>
+        {% block content %}
+        <ul>
+            <li>
+                <img src="{% static 'img/кот/кот1.jpg' %}" alt="Дымчатый Костик">
+                <p>Дымчатый Костик <button>Подать заявку</button></p>
+            </li>
+            <li>
+                <img src="{% static 'img/пес/пес1.jpg' %}" alt="Дружелюбная Милка">
+                <p>Дружелюбная Милка <button>Подать заявку</button></p>
+            </li>
+            <li>
+                <img src="{% static 'img/пес/пес2.jpg' %}" alt="Верная Макси">
+                <p>Верная Макси <button>Подать заявку</button></p>
+            </li>
+            <li>
+                <img src="{% static 'img/кот/кот2.jpg' %}" alt="Игривый Тедди">
+                <p>Игривый Тедди <button>Подать заявку</button></p>
+            </li>
+            <li>
+                <img src="{% static 'img/кот/кот3.jpg' %}" alt="Ласковая Клео">
+                <p>Ласковая Клео <button>Подать заявку</button></p>
+            </li>
+        </ul>
+
+        {% endblock %}
+    </main>
+</body>
+</html>
