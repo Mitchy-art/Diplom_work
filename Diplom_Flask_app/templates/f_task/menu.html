@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css_pack/styles.css') }}"/>
+</head>
+<body>
+    <menu>
+        <a href="{{ url_for('main_page_f') }}">Главная страница</a>
+        <a href="{{ url_for('shop') }}">Хвостики</a>
+        <a href="{{ url_for('cart') }}">Заявки</a>
+        <a href="{{ url_for('register') }}">Регистрация</a>
+        <a href="{{ url_for('login') }}">Войти</a>
+    </menu>
+    <slash>
+        {% block slash %}
+        <h5>____________________________________________________________________________________________________________________________________________________________________________________</h5>
+        {% endblock %}
+    </slash>
+    <main>
+        {% block content %}
+        <ul>
+            <li>
+                <img src="{{ url_for( 'static', filename='img/кот/кот1.jpg') }}" alt="Дымчатый Костик">
+                <p>Дымчатый Костик <button>Подать заявку</button></p>
+            </li>
+            <li>
+                <img src="{{ url_for( 'static', filename='img/пес/пес1.jpg') }}" alt="Дружелюбная Милка">
+                <p>Дружелюбная Милка <button>Подать заявку</button></p>
+            </li>
+            <li>
+                <img src="{{ url_for( 'static', filename='img/пес/пес2.jpg') }}" alt="Верная Макси">
+                <p>Верная Макси <button>Подать заявку</button></p>
+            </li>
+            <li>
+                <img src="{{url_for( 'static', filename='img/кот/кот2.jpg' ) }}" alt="Игривый Тедди">
+                <p>Игривый Тедди <button>Подать заявку</button></p>
+            </li>
+            <li>
+                <img src="{{ url_for( 'static', filename='img/кот/кот3.jpg') }}" alt="Ласковая Клео">
+                <p>Ласковая Клео <button>Подать заявку</button></p>
+            </li>
+        </ul>
+        {% endblock %}
+    </main>
+</body>
+</html>

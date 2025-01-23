@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css_pack/styles.css') }}"/>
+</head>
+<body>
+    <h1>Регистрация</h1>
+    <form action="{{ url_for('register') }}" method="post">
+        <div>
+            <label>Username:
+                <input type="text" name="Введите логин" maxlength="30" required>
+            </label>
+        </div>
+        <div>
+            <label>Age:
+                <input type="number" name="Введите возвраст" min="1" max="120" required>
+            </label>
+        </div>
+        <div>
+            <label>Password:
+                <input type="password" name="Введите пароль" minlength="8" required>
+            </label>
+        </div>
+        <div>
+            <label>Confirm Password:
+                <input type="password" name="Повторите пароль" minlength="8" required>
+            </label>
+        </div>
+        <div>
+            <label>Email:
+                <input type="text" name="Введите почту" min="1" max="120" required>
+            </label>
+        </div>
+        <div>
+            <input type="submit" value="Зарегистрироваться">
+        </div>
+    </form>
+</body>
+</html>
