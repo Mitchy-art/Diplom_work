@@ -9,6 +9,7 @@ users = Table(
     Column("username", String(30), unique=True, nullable=False),
     Column("password_hash", String, nullable=False),
     Column("age", Integer),
+    Column("email", String, nullable=False)
 )
 
 pets = Table(
